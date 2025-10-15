@@ -171,7 +171,49 @@ index=* sourcetype=ssh_logs earliest=-10m
 - Create dashboard for brute force attack visualization
 
 ---
+---
 
+## Lab Screenshots
+
+### Failed Login Analysis
+![Failed Login Query](ssh-brute-force-1.png)
+
+*SPL query identifying failed SSH login attempts by source IP - 305 events analyzed*
+
+### Alert Configuration
+![Real-time Alert Setup](ssh-brute-force-2.png)
+
+*Configuring "Brute_force attempts" alert with real-time trigger*
+
+### Data Ingestion
+![SSH Log Upload](ssh-brute-force-3.png)
+
+*Uploading ssh_logs.json dataset into Splunk*
+
+### Successful Login Correlation
+![Compromised Accounts](ssh-brute-force-4.png)
+
+*Query correlating failed attempts with successful logins - 306 events showing compromised accounts*
+
+### Event Type Breakdown
+![Authentication Events](ssh-brute-force-5.png)
+
+*Statistics showing distribution of SSH authentication events*
+
+### Multiple Failed Authentication Attempts
+![Brute Force Pattern](ssh-brute-force-6.png)
+
+*Correlation showing IPs with 3+ failed login attempts*
+
+### Alert Summary
+![Alert Details](ssh-brute-force-7.png)
+
+*Configured alert showing trigger conditions and actions*
+
+### Raw Event Data
+![Event Details](ssh-brute-force-8.png)
+
+*Detailed view of successful SSH login event showing all extracted fields*
 **Detection Date:** 2025 (Lab Environment)  
 **Platform:** Splunk Enterprise  
 **Query Language:** SPL  
