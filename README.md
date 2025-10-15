@@ -169,50 +169,46 @@ index=* sourcetype=ssh_logs earliest=-10m
 - Implement adaptive thresholds based on user behavior
 - Add automated response actions (e.g., firewall blocking)
 - Create dashboard for brute force attack visualization
-
----
----
-
 ---
 
 ## Lab Screenshots
 
 ### Failed Login Analysis
-![Failed Login Query](ssh-brute-force-failed-login-analysis.png)
+![Failed Login Query](ssh-brute-force-1.png)
 
-*SPL query identifying failed SSH login attempts by source IP - 305 events analyzed*
+*SPL query identifying failed SSH login attempts by source IP*
 
 ### Alert Configuration
-![Real-time Alert Setup](ssh-brute-force-alert-configuration.png)
+![Real-time Alert Setup](ssh-brute-force-2.png)
 
 *Configuring "Brute_force attempts" alert with real-time trigger*
 
 ### Data Ingestion
-![SSH Log Upload](ssh-brute-force-data-ingestion.png)
+![SSH Log Upload](ssh-brute-force-3.png)
 
 *Uploading ssh_logs.json dataset into Splunk*
 
 ### Successful Login Correlation
-![Compromised Accounts](ssh-brute-force-successful-login-correlation.png)
+![Compromised Accounts](ssh-brute-force-4.png)
 
-*Query correlating failed attempts with successful logins - 306 events showing compromised accounts*
+*Query correlating failed attempts with successful logins*
 
 ### Event Type Breakdown
-![Authentication Events](ssh-brute-force-event-type-breakdown.png)
+![Authentication Events](ssh-brute-force-5.png)
 
 *Statistics showing distribution of SSH authentication events*
 
 ### Multiple Failed Authentication Attempts
-![Brute Force Pattern](ssh-brute-force-multiple-failed-attempts.png)
+![Brute Force Pattern](ssh-brute-force-6.png)
 
-*Correlation showing IPs with 3+ failed login attempts*
+*Correlation showing IPs with multiple failed login attempts*
 
 ### Alert Summary
-![Alert Details](ssh-brute-force-alert-summary.png)
+![Alert Details](ssh-brute-force-7.png)
 
 *Configured alert showing trigger conditions and actions*
 
 ### Raw Event Data
-![Event Details](ssh-brute-force-raw-event-data.png)
+![Event Details](ssh-brute-force-8.png)
 
-*Detailed view of successful SSH login event showing all extracted fields*
+*Detailed view of SSH login event with extracted fields*
