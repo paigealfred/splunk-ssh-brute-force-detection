@@ -171,44 +171,46 @@ index=* sourcetype=ssh_logs earliest=-10m
 - Create dashboard for brute force attack visualization
 ---
 
+---
+
 ## Lab Screenshots
 
 ### Failed Login Analysis
-![Failed Login Query](ssh-brute-force-1.png)
+![Failed Login Query](Failed-Login-Analysis.png)
 
-*SPL query identifying failed SSH login attempts by source IP*
+*SPL query identifying failed SSH login attempts by source IP - 305 events analyzed*
 
 ### Alert Configuration
-![Real-time Alert Setup](ssh-brute-force-2.png)
+![Real-time Alert Setup](Alert-Configuration.png)
 
 *Configuring "Brute_force attempts" alert with real-time trigger*
 
 ### Data Ingestion
-![SSH Log Upload](ssh-brute-force-3.png)
+![SSH Log Upload](Data-Ingestion.png)
 
 *Uploading ssh_logs.json dataset into Splunk*
 
 ### Successful Login Correlation
-![Compromised Accounts](ssh-brute-force-4.png)
+![Compromised Accounts](Successful-Login-Correlation.png)
 
-*Query correlating failed attempts with successful logins*
+*Query correlating failed attempts with successful logins - 306 events showing compromised accounts*
 
 ### Event Type Breakdown
-![Authentication Events](ssh-brute-force-5.png)
+![Authentication Events](Event-Type-Breakdown.png)
 
 *Statistics showing distribution of SSH authentication events*
 
 ### Multiple Failed Authentication Attempts
-![Brute Force Pattern](ssh-brute-force-6.png)
+![Brute Force Pattern](Multiple-Failed-Authentication-Attempts.png)
 
-*Correlation showing IPs with multiple failed login attempts*
+*Correlation showing IPs with 3+ failed login attempts*
 
 ### Alert Summary
-![Alert Details](ssh-brute-force-7.png)
+![Alert Details](Alert-Summary.png)
 
 *Configured alert showing trigger conditions and actions*
 
 ### Raw Event Data
-![Event Details](ssh-brute-force-8.png)
+![Event Details](Raw-Event-Data.png)
 
-*Detailed view of SSH login event with extracted fields*
+*Detailed view of successful SSH login event showing all extracted fields*
